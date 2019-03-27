@@ -40,18 +40,18 @@ gph.transfer(
 # Part 2. 区块链系统的互操作API  
 
 ### 转账
-方法：transfer
-功能：向目标对象发送代币
-参数：
-    to：接收方账户名
-    amount(int)：发送的代币数量
-    asset：资产ID或代币符号
-    memo：转账备注
-    account：发送方账户名
+方法：transfer  
+功能：向目标对象发送代币  
+参数：  
+    to：接收方账户名  
+    amount(int)：发送的代币数量  
+    asset：资产ID或代币符号  
+    memo：转账备注  
+    account：发送方账户名  
 
 ### 创建限价单
-方法：limit_order_create
-功能：创建在给定市场中的订单
+方法：limit_order_create  
+功能：创建在给定市场中的订单  
 参数：
     amount(int)：出售的代币数量
     asset：出售的资产ID或代币符号
