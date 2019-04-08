@@ -48,10 +48,10 @@ config["default_account"] = yourname # 向钱包数据库中添加默认信息
 
 使用API
 -------------
-**Graphene实例调用示例：**
-方法：info
-功能：获得链的全局属性
-示例：
+**Graphene实例调用示例：**  
+方法：info  
+功能：获得链的全局属性  
+示例：  
 ```python
 print(gph.info())
 ```
@@ -80,11 +80,12 @@ pprint(gph.upgrade_account("test1"))
 参数：  
     account_name：账户名注册规则，/^[a-z][a-z0-9\.-]{4,63}$/，小写字母开头+数字或小写字母或点.或短横线-，长度4至63  
     password：账户密码  
-注：只有终身账户才可以创建账户
+注：只有终身账户才可以创建账户  
+示例：  
 ```python
 pprint(gph.create_account("test3", "password"))
 ```
-**钱包api调用示例：**
+**钱包api调用示例：**  
 方法：unlock  
 功能：解锁钱包，进行相关钱包操作  
 参数：  
@@ -105,7 +106,7 @@ print(gph.wallet.getAccounts())
 ```python
 print(gph.wallet.getPrivateKeyForPublicKey(pub))
 ```
-**RPC接口调用示例：**
+**RPC接口调用示例：**  
 方法：get_object   
 功能：获取此object对象信息  
 参数：  
