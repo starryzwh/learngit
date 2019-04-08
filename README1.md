@@ -2,6 +2,7 @@ Python Library For BCX
 ==============
 * [入门](#入门)
 * [使用API](#使用API)
+* [Main-Packages](#Main-Packages)
 
 入门
 ---------------
@@ -123,7 +124,50 @@ print(gph.rpc.get_object("1.2.18")) # 获取id为"1.2.17"的账户信息
 ```python
 print(gph.rpc.get_contract("1.16.0")) # 获取id为"1.16.0"的合约信息
 ```
+Main-Packages
+-------------
+**grapheneEnhance**
+说明：其中的子模块一一对应了链系统中涉及到的所有类，比如账户、资产、区块、提议、合约等，每个类下有相应的方法可以调用。graphene模块中有与操作operation有关的api接口可供调用，比如转账、创建账户、创建资产、创建合约等。
 
-
+ - grapheneEnhance.account module 
+ - grapheneEnhance.aes module
+ - grapheneEnhance.amount module
+ - grapheneEnhance.asset module
+ - grapheneEnhance.block module
+ - grapheneEnhance.blockchain module
+ - grapheneEnhance.committee module
+ - grapheneEnhance.contract module
+ - grapheneEnhance.dex module
+ - grapheneEnhance.exceptions module
+ - grapheneEnhance.extensions module
+ - grapheneEnhance.graphene module
+ - grapheneEnhance.instance module
+ - grapheneEnhance.market module
+ - grapheneEnhance.memo module
+ - grapheneEnhance.notify module
+ - grapheneEnhance.price module
+ - grapheneEnhance.proposal module
+ - grapheneEnhance.storage module
+ - grapheneEnhance.transactionbuilder module
+ - grapheneEnhance.utils module
+ - grapheneEnhance.vesting module
+ - grapheneEnhance.wallet module
+ - grapheneEnhance.witness module
+ - grapheneEnhance.worker module
+ 
+ **grapheneEnhancebase**
+ 说明：其中的子模块涉及到一些与底层设计相关的内容，比如链信息、对象类型、操作、数据结构等，一般不需要改变，chains模块需要初始化时依据链使用情况进行修改操作。
+ 
+ - grapheneEnhancebase.account module
+ - grapheneEnhancebase.asset_permissions module
+ - grapheneEnhancebase.bip38 module
+ - grapheneEnhancebase.chains module
+ - grapheneEnhancebase.memo module
+ - grapheneEnhancebase.objects module
+ - grapheneEnhancebase.objecttypes module
+ - grapheneEnhancebase.operationids module
+ - grapheneEnhancebase.operations module
+ - grapheneEnhancebase.signedtransactions module
+ - grapheneEnhancebase.transactions module
 
  
